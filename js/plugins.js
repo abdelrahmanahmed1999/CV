@@ -16,7 +16,7 @@ function load(){
     sectionloading.style.display="none";
   }
   else{
-    sectionloading.childNodes[3].innerHTML+=y[count];
+    sectionloading.childNodes[1].innerHTML+=y[count];
     count++;
   }
 }
