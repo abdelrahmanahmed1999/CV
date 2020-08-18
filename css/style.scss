@@ -29,7 +29,7 @@ body{
     width:100%;
     height:100%;
     background:rgba(0,0,0,1);
-    z-index:16;
+    z-index:99999;
 
     p{
         color:#FFF;
@@ -38,60 +38,10 @@ body{
         margin-top:100px;
     }
 
-    .subloading{
-        position: relative;
-        width: 50%;
-        height: 50%;
-        margin: auto;
-        display:none;
-
-        span{
-            display:block;
-            position: absolute;
-            left:50%;
-            width:9px;
-            height:5px;
-            top:50%;
-            margin-right:10px;
-            background:#FFF;
-            -webkit-animation:waving 1.5s ease-in-out infinite;
-            animation:waving 1.5s ease-in-out infinite;
+    @media(max-width:767px){
+        p{
+            font-size:20px;
         }
-
-        span:nth-of-type(2){
-            left:52%;
-            -webkit-animation-delay:.2s;
-            animation-delay:.2s;
-        }
-        
-        span:nth-of-type(3){
-            left:54%;
-            -webkit-animation-delay:.4s;
-            animation-delay:.4s;
-        }
-       
-        span:nth-of-type(4){
-            left:56%;
-            -webkit-animation-delay:.6s;
-            animation-delay:.6s;
-        }
-
-        span:last-of-type{
-            left:58%;
-            -webkit-animation-delay:.8s;
-            animation-delay:.8s;
-        }
-            
-        @keyframes waving{
-            0%,50%,100%{
-                height:5px;
-                transform:translatey(0);
-            }
-            25%{
-                height:50px;
-                transform:translatey(-15px);
-            }
-        }    
     }
 }
 
@@ -139,12 +89,22 @@ body{
 
 .myheader{
     margin-bottom:50px;
+
     .item{
+
         .carousel-caption{
+
             p{
                 font-size:40px;
                 font-weight:bold;
             }
+        }
+
+    }
+
+    @media(max-width:767px){
+        p{
+            font-size:20px !important;
         }
     }
 }
@@ -158,7 +118,8 @@ body{
     @media(max-width:767px) {
 
         li{   
-            font-size:13px !important;        
+            font-size:13px !important;
+
             span{
                 width:16% !important;
             }
@@ -551,7 +512,7 @@ body{
         }
             
             p{
-                width:100%;
+                width:100% !important;
             }
 
         ul{
@@ -560,7 +521,9 @@ body{
             li{
                 width: 23%;
                 font-size: 10px;
-                margin-left: 0!important;
+                margin-left: 0 !important;
+                margin-right:5px !important;
+                margin-bottom:10px;
                 padding-right: 0 !important;
             }
         }

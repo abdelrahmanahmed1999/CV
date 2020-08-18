@@ -24,7 +24,6 @@ let wait=setInterval(load,300);
 
 
 //function to toggle active class in header and scrollTo to sections
-
 let alllistanchor=document.querySelectorAll(".nav li a");
 alllistanchor.forEach(elem=>{
   elem.addEventListener("click",(e)=>{
@@ -233,7 +232,6 @@ window.onscroll=function(){
 
 
 //function to get data from data.json and put it in feature section
-
 function featuresection(){
   let featurerequest=new XMLHttpRequest(),
       allicon=document.querySelectorAll(".feature .feat i"),
