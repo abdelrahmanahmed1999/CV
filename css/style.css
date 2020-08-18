@@ -1,0 +1,402 @@
+body {
+  position: relative; }
+
+/*start general*/
+* {
+  box-sizing: border-box; }
+
+/*end general*/
+/*start loading*/
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 16;
+  display: none; }
+  .loading p {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px; }
+  .loading .subloading {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: none; }
+    .loading .subloading span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 9px;
+      height: 5px;
+      top: 50%;
+      margin-right: 10px;
+      background: #FFF;
+      -webkit-animation: waving 1.5s ease-in-out infinite;
+      animation: waving 1.5s ease-in-out infinite; }
+    .loading .subloading span:nth-of-type(2) {
+      left: 52%;
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s; }
+    .loading .subloading span:nth-of-type(3) {
+      left: 54%;
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s; }
+    .loading .subloading span:nth-of-type(4) {
+      left: 56%;
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s; }
+    .loading .subloading span:last-of-type {
+      left: 58%;
+      -webkit-animation-delay: .8s;
+      animation-delay: .8s; }
+@keyframes waving {
+  0%,50%,100% {
+    height: 5px;
+    transform: translatey(0); }
+  25% {
+    height: 50px;
+    transform: translatey(-15px); } }
+/*end loading*/
+/*start mynavbar*/
+.mynavbar .navbar-header .navbar-brand {
+  font-size: 20px; }
+  .mynavbar .navbar-header .navbar-brand span {
+    color: dodgerblue; }
+.mynavbar .nav li {
+  cursor: pointer; }
+  .mynavbar .nav li a {
+    font-size: 20px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    .mynavbar .nav li a:hover {
+      color: dodgerblue; }
+    .mynavbar .nav li a.active {
+      color: dodgerblue; }
+
+/*end mynavbar*/
+/*start myheader*/
+.myheader {
+  margin-bottom: 50px; }
+  .myheader .item .carousel-caption p {
+    font-size: 40px;
+    font-weight: bold; }
+
+/*end myheader*/
+/*start myinfo*/
+@media (max-width: 767px) {
+  .myinfo li {
+    font-size: 13px !important; }
+    .myinfo li span {
+      width: 16% !important; }
+  .myinfo .link {
+    -webkit-word-wrap: break-word;
+    word-wrap: break-word; } }
+.myinfo .panel .panel-heading {
+  position: relative;
+  font-size: 17px; }
+  .myinfo .panel .panel-heading span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer; }
+.myinfo .panel .panel-body {
+  display: none; }
+  .myinfo .panel .panel-body .content ul li {
+    margin-bottom: 5px;
+    font-size: 18px; }
+    .myinfo .panel .panel-body .content ul li span {
+      display: inline-block;
+      width: 15%; }
+  .myinfo .panel .panel-body .content h3 {
+    margin-top: 0; }
+
+/*end myinfo*/
+/*start our-progress*/
+.our-progress {
+  padding: 50px 0;
+  background: #777;
+  color: #FFF;
+  height: 300px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .our-progress {
+      padding: 20px 0; }
+    .our-progress h2 {
+      font-size: 30px; } }
+  .our-progress h2 {
+    margin-bottom: 20px; }
+  .our-progress .content {
+    position: relative;
+    left: -675px; }
+  .our-progress .info {
+    position: relative;
+    right: -675px; }
+
+/*end our-progress*/
+/*start mycard*/
+.mycard {
+  padding: 50px 0; }
+  @media (max-width: 767px) {
+    .mycard {
+      padding: 20px 0; }
+    .mycard h2 {
+      font-size: 30px; } }
+  .mycard h2 {
+    margin-bottom: 20px; }
+  .mycard .item {
+    position: relative;
+    border: 3px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px; }
+    .mycard .item .back {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      width: 70%;
+      height: 50%;
+      font-weight: bold;
+      word-wrap: break-word;
+      color: dodgerblue; }
+    .mycard .item .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: all 2s ease-in-out;
+      transform-style: preserve-3d;
+      -webkit-animation: rotate 2s ease-in-out infinite;
+      animation: rotate 2s ease-in-out infinite; }
+@keyframes rotate {
+  from {
+    transform: rotateY(180deg); }
+  to {
+    transform: rotateY(0deg); } }
+      .mycard .item .card img {
+        width: 100%;
+        margin-bottom: 5px; }
+  .mycard button {
+    margin-top: 20px; }
+
+.mycard .col-md-3:nth-child(5) {
+  display: none; }
+
+.mycard .col-md-3:nth-child(6) {
+  display: none; }
+
+.mycard .col-md-3:nth-child(7) {
+  display: none; }
+
+.mycard .col-md-3:nth-child(8) {
+  display: none; }
+
+.mycard .col-md-3:nth-child(9) {
+  display: none; }
+
+/*end mycard*/
+/*start feature*/
+.feature {
+  padding: 50px 0; }
+  @media (max-width: 767px) {
+    .feature {
+      padding: 20px 0; }
+    .feature h2 {
+      font-size: 30px; }
+    .feature .propertise {
+      width: 90%; }
+    .feature .overlfeat {
+      width: 110px;
+      height: 210px; }
+    .feature .icon i {
+      font-size: 40px !important; }
+    .feature p {
+      width: 100%;
+      font-size: 11px; } }
+  .feature h2 {
+    margin-bottom: 20px; }
+  .feature .feat {
+    border: 3px solid darkgrey;
+    margin-bottom: 10px;
+    padding: 10px; }
+    .feature .feat .card .icon {
+      border-bottom: 1px solid #777;
+      margin-bottom: 20px; }
+      .feature .feat .card .icon i {
+        padding-bottom: 15px; }
+  .feature .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+    display: none; }
+    .feature .overlay .properties {
+      position: relative;
+      /*top:67%;de tare2a 3lshna popup yezhar fe makanoh mash fe awel mawka3 bas mash dynamic de keda static e3ny
+      law na2lna makan feature section lazm de tt8yer w deh 7aga static*/
+      width: 80%;
+      margin: auto;
+      background: #FFF;
+      padding: 20px;
+      border: 5px solid #777; }
+      .feature .overlay .properties .cancel {
+        position: absolute;
+        right: -15px;
+        top: -7px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer; }
+      .feature .overlay .properties .overlfeat {
+        border: 3px solid darkgrey;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #fff;
+        background: #333; }
+        .feature .overlay .properties .overlfeat .card .icon {
+          border-bottom: 1px solid #777;
+          margin-bottom: 20px; }
+          .feature .overlay .properties .overlfeat .card .icon i {
+            padding-bottom: 15px; }
+  .feature button {
+    margin-top: 20px; }
+
+/*end feature*/
+/*start contact us*/
+.contact-us {
+  background: url("../images/contact.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px 0;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .contact-us {
+      padding: 20px 0; }
+    .contact-us h2 {
+      font-size: 30px; } }
+  .contact-us h2 {
+    margin-bottom: 20px; }
+  .contact-us form input:focus,
+  .contact-us form textarea:focus {
+    border: 1px solid #f0ad4e;
+    border-radius: 10px; }
+  .contact-us form input:not([type='submit']):focus::-webkit-input-placeholder,
+  .contact-us form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .contact-us form input:not([type='submit']):focus::placeholder,
+  .contact-us form textarea:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+  .contact-us form input, .contact-us form textarea {
+    margin-bottom: 25px; }
+  .contact-us form .form-control {
+    border: 0;
+    box-shadow: none; }
+  .contact-us form textarea {
+    height: 150px;
+    resize: none; }
+  .contact-us form input[type="submit"] {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px; }
+  .contact-us form .forminput {
+    position: relative;
+    top: -340px; }
+  .contact-us form .formsubmit {
+    position: relative;
+    bottom: -340px; }
+
+/*end contact us*/
+/*start upperfooter*/
+.upperfooter {
+  padding: 20px 0;
+  background: #333; }
+  .upperfooter .image {
+    display: none; }
+
+/*end upperfooter*/
+/*start footer*/
+.footer {
+  padding: 50px 0;
+  color: #FFF;
+  background: #000; }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 20px 0; }
+    .footer p {
+      width: 100%; }
+    .footer ul {
+      width: 100% !important; }
+      .footer ul li {
+        width: 23%;
+        font-size: 10px;
+        margin-left: 0 !important;
+        padding-right: 0 !important; } }
+  .footer .media img {
+    margin-right: 15px; }
+  .footer .media h4 {
+    color: #eae7e7;
+    font-size: 20px;
+    letter-spacing: 3px; }
+  .footer .media p {
+    color: #777;
+    width: 50%; }
+  .footer .media ul {
+    width: 85%;
+    border-top: 1px solid #777;
+    padding-top: 5px; }
+    .footer .media ul li {
+      margin-left: 8px;
+      padding-right: 10px;
+      border-right: 2px solid #777; }
+      .footer .media ul li:last-of-type {
+        border-right: 0; }
+  .footer ul li {
+    display: inline-block; }
+  .footer h4 {
+    font-size: 12px;
+    color: dodgerblue;
+    margin-top: 0px !important; }
+  .footer .col-md-2 ul {
+    margin-bottom: 25px; }
+    .footer .col-md-2 ul li {
+      margin-right: 20px; }
+      .footer .col-md-2 ul li i {
+        font-size: 20px;
+        padding: 8px;
+        background: #8181cf;
+        border-radius: 50%; }
+  .footer button {
+    margin-bottom: 25px; }
+  .footer .col-md-6 ul li {
+    display: block;
+    margin-bottom: 15px; }
+  .footer .col-md-3 ul li {
+    display: block; }
+  .footer .col-xs-6 {
+    height: 200px; }
+
+/*end footer*/
+
+/*# sourceMappingURL=style.css.map */

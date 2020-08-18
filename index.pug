@@ -1,0 +1,253 @@
+doctype
+html(lang="en")
+    head(charset="UTF-8")
+        title CV
+        link(rel="stylesheet" href="css/bootstrap.css")
+        link(rel="stylesheet" href="css/font-awesome.min.css")
+        link(rel="stylesheet" href="css/style.css")
+    body
+
+        //start loading page
+
+        section(class="loading text-center" id="load")
+            div(class="subloading text-center")
+                span 
+                span 
+                span 
+                span
+                span
+            p
+
+        //end loading page
+
+        //start mynavbar
+
+        section(class='mynavbar')
+                    nav(class='navbar navbar-inverse navbar-fixed-top' role='navigation')
+                            .container
+                                div(class='navbar-header')
+                                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ournavbar")
+                                        span(class='src-only')
+                                        span(class='icon-bar')
+                                        span(class='icon-bar')
+                                        span(class='icon-bar')
+                                    a(href="#" class="navbar-brand") #[span Abdo] Tarek
+                                div(class="collapse navbar-collapse" id="ournavbar")
+                                    ul(class='nav navbar-nav navbar-right scroll')
+                                        li #[a(class='active' data-value='myinfo') Information]
+                                        li #[a(data-value='our-progress') Skills]
+                                        li #[a(data-value='mycard') Works]
+                                        li #[a(data-value='feature') Features]
+                                        li #[a(data-value='contact-us') Contact]
+
+        //end mynavbar
+
+        //start myheader
+        section(class="myheader")
+                div(id="myslide" class="carousel slide" data-ride="carousel")
+                    div(class="carousel-inner" id="inner")
+                        - for(let i=1;i<=2;i++)
+                            div(class="item")
+                                img(src="" alt="pic1")
+                                div(class="carousel-caption")
+                    a(class="left carousel-control" href="#myslide" role="botton" data-slide="prev")
+                        span(class="glyphicon glyphicon-chevron-left")
+                    a(class="right carousel-control" href="#myslide" role="botton" data-slide="next")
+                        span(class="glyphicon glyphicon-chevron-right")
+        //end myheader
+
+        //start myinfo
+        section(class="myinfo" id="myinfo")
+            .container
+                div(class="panel panel-primary")
+                    div(class="panel-heading") My Information #[span(data-text="hide") #[i(class="fa fa-minus")]]
+                    div(class="panel-body")
+                        .row
+                            div(class="col-md-6 col-xs-7")
+                                .content
+                                    ul(class="list-unstyled")
+                                        li #[span Name:]
+                                        li #[span Age:]
+                                        li #[span Mobile:]
+                                        li #[span Faculty:]
+                                        li #[span Degree:]
+                                        li #[span Email:]
+                            div(class="col-md-6 col-xs-5")
+                                .content
+                                    img(src="" class="img-circle img-thumbnail" width="200px" height="100px")
+                                    h3 My Work:
+                                    ul(class="list-unstyled link")
+                                        li #[a(href="#" target="_blank")]
+                                        li #[a(href="#" target="_blank")]
+                        .clearfix
+
+        //end myinfo
+
+        //start our-progress
+
+        section(class='our-progress' id="our-progress")
+            .container
+                h2(class="h1 text-center") My Skills
+                .row
+                    div(class="col-md-6 col-xs-6")
+                        .content
+                            - for(let i=1;i<=4;i++)
+                                    .row
+                                        div(class="col-md-2 col-xs-4")
+                                            span 
+                                        div(class="col-md-10 col-xs-8")
+                                            div(class="progress")
+                                                div(class="progress-bar progress-bar-primary active" role="progressbar" 
+                                                aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="")
+                    div(class="col-md-6 col-xs-6")
+                        .info
+                            - for(let i=1;i<=4;i++)
+                                    .row
+                                        div(class="col-md-2 col-xs-4")
+                                            span 
+                                        div(class="col-md-10 col-xs-8")
+                                            div(class="progress")
+                                                div(class="progress-bar progress-bar-primary active" role="progressbar" 
+                                                aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="")
+                .clearfix
+
+        //end our-progress
+
+        //start mycard
+
+        section(class="mycard text-center" id="mycard")
+            .container
+                h2(class="h1") My Works
+                .row
+                    - for(let i=1;i<=9;i++)
+                        div(class="col-md-3 col-xs-4")
+                            div(class="item text-center")
+                                div(class="back") 
+                                div(class="card text-center")
+                                    img(class="card-image-top" src=`` height="200px")
+                                |
+                                |
+                                a(class="btn btn-primary" href="#" target="_blank") preview website
+                .clearfix
+                button(class="btn btn-warning" data-text="Less Works" data-copy="Less Works") More Works
+
+        //end mycard
+
+        //start feature
+        
+        section(class="feature text-center" id="feature")
+            .container
+                h2(class="h1") Our Feature
+                .row
+                    - for(let i=1;i<=4;i++)
+                        div(class="col-md-3 col-xs-6")
+                            .feat
+                                div(class="card text-center")
+                                    div(class="icon")
+                                        i(class="fa fa-5x")
+                                    div(class="card-body")
+                                    p(calss="card-text")
+                
+                div(class="overlay")
+                    div(class="properties")
+                        div(class="cancel")
+                            i(class="fa fa-close")
+                        .row
+                            - for(let i=1;i<=8;i++)
+                                div(class="col-md-3 col-xs-3")
+                                    .overlfeat
+                                        div(class="card text-center")
+                                            div(class="icon")
+                                                i(class="fa fa-5x")
+                                            div(class="card-body")
+                                            p(calss="card-text")
+
+                button(class="btn btn-warning") More Features
+            .clearfix
+
+        //end feature
+
+        //start contact us
+
+        section(class="contact-us text-center" id="contact-us")
+            .container
+                h2(class="h1") Contact Us
+                form
+                    .row
+                        .col-md-6
+                            .forminput
+                                input(type="text"   class="form-control" placeholder="Youe Name")
+                                input(type="text"   class="form-control" placeholder="Youe Phone")
+                                input(type="email"  class="form-control" placeholder="Youe Email")
+                                input(type="text"   class="form-control" placeholder="Subject")
+                        .col-md-6
+                            .formsubmit
+                                textarea(class="form-control" placeholder="Your Message")
+                                input(type="submit" class="btn btn-warning btn-block form-control" value="Send")
+
+        //end contact us
+
+        //start upperfooter
+        section(class="upperfooter")
+            .container
+                .row 
+                    - for(let i=1;i<=6;i++)
+                        div(class="col-xs-2")
+                            div(class="image")
+                                img(src=`images/service/${i}.png`)
+
+        //end upperfooter
+
+        //start footer
+        section(class="footer")
+            .container
+                .row
+                    diiv(class="col-md-5 col-xs-6")
+                        div(class="media")
+                            img(src="images/helwanlogo.jpg" class="media-object pull-left img-thumbnail" 
+                                width="100px" height="100px")
+                            div(class="media-body")
+                                h4(class="media-heading") Our Services
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                ul(class="list-unstyled")
+                                    li Copyright
+                                    li Privacy
+                                    li Polices
+                                    li Contact
+                    div(class="col-md-2 col-xs-6")
+                        h4 FOLLOW US:
+                        ul(class="list-unstyled")
+                            li #[i(class="fa fa-facebook")]
+                            li #[i(class="fa fa-twitter")]
+                            li #[i(class="fa fa-youtube")]
+                        h4 VISIT US:
+                        ul(class="list-unstyled")
+                            li Map&Direction
+                            li Plan Your Visit
+                            li Virtual Tour
+                    div(class="col-md-2 col-xs-6")
+                        h4 SUPPORT US:
+                        button(class="btn btn-priamary") MAKE A GIFT
+                        h4 WORK WITH US:
+                        P View Jobs
+                    div(class="col-md-3 col-xs-6")
+                        h4 RESOURCES&LINKS
+                        .row
+                            div(class="col-xs-6")
+                                ul(class="list-unstyled")
+                                    li Libary
+                                    li Title
+                                    li Register
+                            div(class="col-xs-6")
+                                ul(class="list-unstyled")
+                                    li Blackboard
+                                    li MyBentley
+                                    li Emergency Info
+                                    
+
+        //end footer
+
+    script(src="js/jquery-1.11.1.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/jquery.nicescroll.min.js")
+    script(src="js/plugins.js")

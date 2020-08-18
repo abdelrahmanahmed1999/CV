@@ -1,0 +1,167 @@
+{
+    "works" : [
+        {
+            "id" : 1,
+            "src": "images/works/1.png",
+            "body": "Website with HTML5,CSS3,BOOTSTRAP,RESPONSIVE",
+            "link": "https://abdelrahmanahmed1999.github.io/template7/"
+        },
+        {
+            "id" : 2,
+            "src": "images/works/2.png",
+            "body": "Website with HTML5,CSS3,BOOTSTRAP,RESPONSIVE",
+            "link": "https://abdelrahmanahmed1999.github.io/template8/"
+        },
+        {
+            "id" : 3,
+            "src": "images/works/3.png",
+            "body": "Website with HTML5,CSS3,BOOTSTRAP,SASS,PUGJS,RESPONSIVE",
+            "link": "https://abdelrahmanahmed1999.github.io/template9/"
+        },
+        {
+            "id" : 4,
+            "src": "images/works/4.png",
+            "body": "Website with HTML5,CSS3,JAVASCRIPT,BOOTSTRAP,SASS,PUGJS,RESPONSIVE",
+            "link": "https://abdelrahmanahmed1999.github.io/template10/"
+        },
+        {
+            "id" : 5,
+            "src": "images/works/5.png",
+            "body": "todolist with REARCTJS,REPONSIVE",
+            "link": "https://abdelrahmanahmed1999template11.netlify.app/"
+        },
+        {
+            "id" : 6,
+            "src": "images/works/6.png",
+            "body": "crudlist with REARCTJS,REPONSIVE",
+            "link": "https://abdelrahmanahmed1999template12.netlify.app/"
+        },
+        {
+            "id" : 7,
+            "src": "images/works/7.png",
+            "body": "weather with REARCTJS,REPONSIVE",
+            "link": "https://abdelrahmanahmed1999template13.netlify.app/"
+        },
+        {
+            "id" : 8,
+            "src": "images/works/8.png",
+            "body": "website with REARCTJS,BOOTSTRAP,REPONSIVE",
+            "link": "https://abdelrahmanahmed1999template14.netlify.app/"
+        },
+        {
+            "id" : 9,
+            "src": "images/works/9.png",
+            "body": "Website with REARCTJS,REDUX,BOOTSTRAP,REPONSIVE",
+            "link": "https://abdelrahmanahmed1999template15.netlify.app/"
+        }
+    ],
+    "carousel" : [
+        {
+            "id":1,
+            "src": "images/carousel/01.jpg"
+        },
+        {
+            "id":2,
+            "src": "images/carousel/02.jpg"
+        }
+    ],
+    "myinfo":[
+        [
+            "Abdelrahman Ahmed Tarek",
+            21,
+            "01147743655",
+            "Computer&Artficial Intelligence,Helwan University",
+            "Bechelor(Last Year)",
+            "abdelrahmanahmedtarek1999@gmail.com"
+        ],
+        [
+            "images/profile/abdo.jpg",
+            "https://app.netlify.com/teams/abdelrahmanahmedtarek1999/sites",
+            "https://github.com/abdelrahmanahmed1999?tab=repositories"
+        ]
+    ],
+    "progress":[
+        {
+            "id":1,
+            "name":"HTML5",
+            "rank":"90%"
+        },
+        {
+            "id":2,
+            "name":"CSS3",
+            "rank":"70%"
+        },
+        {
+            "id":3,
+            "name":"JQUERY",
+            "rank":"80%"
+        },
+        {
+            "id":4,
+            "name":"JAVASCRIPT",
+            "rank":"70%"
+        },
+        {
+            "id":5,
+            "name":"BOOTSTRAP",
+            "rank":"90%"
+        },
+        {
+            "id":6,
+            "name":"SASS",
+            "rank":"90%"
+        },
+        {
+            "id":7,
+            "name":"PUGJS",
+            "rank":"70%"
+        },
+        {
+            "id":8,
+            "name":"REACTJS",
+            "rank":"60%"
+        }
+    ],
+    "feature":[
+        {
+            "id":1,
+            "icon":"fa-diamond",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":2,
+            "icon":"fa-paper-plane",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":3,
+            "icon":"fa-newspaper-o",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":4,
+            "icon":"fa-cogs",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":5,
+            "icon":"fa-cloud",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":6,
+            "icon":"fa-bookmark",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":7,
+            "icon":"fa-users",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        },
+        {
+            "id":8,
+            "icon":"fa-diamond",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."
+        }
+    ]
+}
