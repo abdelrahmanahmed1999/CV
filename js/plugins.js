@@ -7,7 +7,7 @@
 
 
 //append text to paragraph in loading  
-let y="Welcome To My Page",
+let y="Welcome To Our Page",
     count=0,
     sectionloading=document.getElementById("load");
 function load(){
