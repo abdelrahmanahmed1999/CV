@@ -221,7 +221,7 @@ window.onscroll=function(){
   let upperfootersection=document.querySelector(".upperfooter"),
     allimage=document.querySelectorAll(".upperfooter .image"),
     counter=0;
-  if(window.pageYOffset > 1200){
+  if(window.pageYOffset > 1300){
     let set=setInterval(function(){
       if(counter > 5){
         clearInterval(set);
