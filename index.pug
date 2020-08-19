@@ -2,6 +2,7 @@ doctype
 html(lang="en")
     head
         meta(charset="UTF-8")
+        //satar da moham gedn 3lshna yesh8al l media query
         meta(content="width=device-width, initial-scale=1" name="viewport")
         title CV
         link(rel="stylesheet" href="css/bootstrap.css")
@@ -39,6 +40,7 @@ html(lang="en")
         //end mynavbar
 
         //start myheader
+
         section(class="myheader")
                 div(id="myslide" class="carousel slide" data-ride="carousel")
                     div(class="carousel-inner" id="inner")
@@ -50,6 +52,7 @@ html(lang="en")
                         span(class="glyphicon glyphicon-chevron-left")
                     a(class="right carousel-control" href="#myslide" role="botton" data-slide="next")
                         span(class="glyphicon glyphicon-chevron-right")
+
         //end myheader
 
         //start myinfo
@@ -89,9 +92,9 @@ html(lang="en")
                         .content
                             - for(let i=1;i<=4;i++)
                                     .row
-                                        div(class="col-md-2 col-xs-4")
+                                        div(class="col-md-2 col-xs-6")
                                             span 
-                                        div(class="col-md-10 col-xs-8")
+                                        div(class="col-md-10 col-xs-6")
                                             div(class="progress")
                                                 div(class="progress-bar progress-bar-primary active" role="progressbar" 
                                                 aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="")
@@ -99,9 +102,9 @@ html(lang="en")
                         .info
                             - for(let i=1;i<=4;i++)
                                     .row
-                                        div(class="col-md-2 col-xs-4")
+                                        div(class="col-md-2 col-xs-6")
                                             span 
-                                        div(class="col-md-10 col-xs-8")
+                                        div(class="col-md-10 col-xs-6")
                                             div(class="progress")
                                                 div(class="progress-bar progress-bar-primary active" role="progressbar" 
                                                 aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="")
@@ -150,13 +153,13 @@ html(lang="en")
                             i(class="fa fa-close")
                         .row
                             - for(let i=1;i<=8;i++)
-                                div(class="col-md-3 col-xs-3")
+                                div(class="col-md-3 col-xs-4")
                                     .overlfeat
                                         div(class="card text-center")
                                             div(class="icon")
                                                 i(class="fa fa-5x")
                                             div(class="card-body")
-                                            p(calss="card-text")
+                                                p(calss="card-text")
 
                 button(class="btn btn-warning") More Features
             .clearfix
@@ -184,6 +187,7 @@ html(lang="en")
         //end contact us
 
         //start upperfooter
+
         section(class="upperfooter")
             .container
                 .row 
@@ -195,6 +199,7 @@ html(lang="en")
         //end upperfooter
 
         //start footer
+        
         section(class="footer")
             .container
                 .row
@@ -205,19 +210,18 @@ html(lang="en")
                             div(class="media-body")
                                 h4(class="media-heading") Our Services
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                ul(class="list-unstyled")
+                                ul(class="list-unstyled first")
                                     li Copyright
                                     li Privacy
-                                    li Polices
-                                    li Contact
+                                    li(class="hidden-xs") Contact
                     div(class="col-md-2 col-xs-6")
                         h4 FOLLOW US:
-                        ul(class="list-unstyled")
+                        ul(class="list-unstyled second")
                             li #[i(class="fa fa-facebook")]
                             li #[i(class="fa fa-twitter")]
                             li #[i(class="fa fa-youtube")]
                         h4 VISIT US:
-                        ul(class="list-unstyled")
+                        ul(class="list-unstyled third")
                             li Map&Direction
                             li Plan Your Visit
                             li Virtual Tour

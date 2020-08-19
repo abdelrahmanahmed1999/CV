@@ -46,7 +46,8 @@ body {
 /*end mynavbar*/
 /*start myheader*/
 .myheader {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 50px; }
   .myheader .item .carousel-caption p {
     font-size: 40px;
     font-weight: bold; }
@@ -58,9 +59,9 @@ body {
 /*start myinfo*/
 @media (max-width: 767px) {
   .myinfo li {
-    font-size: 13px !important; }
+    font-size: 9px !important; }
     .myinfo li span {
-      width: 16% !important; }
+      width: 23% !important; }
   .myinfo .link {
     -webkit-word-wrap: break-word;
     word-wrap: break-word; } }
@@ -114,7 +115,19 @@ body {
     .mycard {
       padding: 20px 0; }
     .mycard h2 {
-      font-size: 30px; } }
+      font-size: 30px; }
+    .mycard .item {
+      height: 150px; }
+    .mycard .card {
+      height: 80% !important; }
+    .mycard img {
+      height: 100px; }
+    .mycard .back {
+      top: 5% !important;
+      font-size: 9px; }
+    .mycard a {
+      width: 90%;
+      font-size: 7px; } }
   .mycard h2 {
     margin-bottom: 20px; }
   .mycard .item {
@@ -176,16 +189,21 @@ body {
       padding: 20px 0; }
     .feature h2 {
       font-size: 30px; }
-    .feature .propertise {
-      width: 90%; }
+    .feature .col-xs-4 {
+      padding-right: 5px;
+      padding-left: 0; }
+      .feature .col-xs-4:nth-child(7), .feature .col-xs-4:nth-child(8) {
+        display: none; }
+    .feature .properties {
+      width: 90% !important; }
     .feature .overlfeat {
-      width: 110px;
-      height: 210px; }
+      width: 100%;
+      height: 165px; }
     .feature .icon i {
       font-size: 40px !important; }
     .feature p {
       width: 100%;
-      font-size: 11px; } }
+      font-size: 8px; } }
   .feature h2 {
     margin-bottom: 20px; }
   .feature .feat {
@@ -296,6 +314,12 @@ body {
 .upperfooter {
   padding: 20px 0;
   background: #333; }
+  @media (max-width: 767px) {
+    .upperfooter .col-xs-2 {
+      padding-right: 0;
+      padding-left: 0; }
+    .upperfooter img {
+      width: 100%; } }
   .upperfooter .image {
     display: none; }
 
@@ -308,17 +332,32 @@ body {
   @media (max-width: 767px) {
     .footer {
       padding: 20px 0; }
+    .footer .col-xs-6 {
+      padding-left: 15px; }
+    .footer img {
+      width: 50px; }
+    .footer .media-body {
+      width: 80px; }
+    .footer h4 {
+      width: 80px;
+      font-size: 10px !important; }
     .footer p {
-      width: 100% !important; }
-    .footer ul {
-      width: 100% !important; }
-      .footer ul li {
-        width: 23%;
-        font-size: 10px;
-        margin-left: 0 !important;
-        margin-right: 5px !important;
-        margin-bottom: 10px;
-        padding-right: 0 !important; } }
+      width: 100% !important;
+      font-size: 10px; }
+    .footer .first li {
+      width: 30px !important;
+      font-size: 6px;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      padding-right: 30px !important; }
+      .footer .first li:nth-child(2) {
+        border-right: 0; }
+    .footer .second li {
+      margin-right: 0 !important; }
+    .footer .third li {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 10px; } }
   .footer .media img {
     margin-right: 15px; }
   .footer .media h4 {

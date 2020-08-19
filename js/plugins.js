@@ -24,6 +24,7 @@ let wait=setInterval(load,300);
 
 
 //function to toggle active class in header and scrollTo to sections
+
 let alllistanchor=document.querySelectorAll(".nav li a");
 alllistanchor.forEach(elem=>{
   elem.addEventListener("click",(e)=>{
@@ -39,6 +40,7 @@ alllistanchor.forEach(elem=>{
 
 
 //function to get data from json file and put it in myheader section
+
 function mycarousel(){
   document.getElementById("inner").firstElementChild.classList.add("active");
     let req = new XMLHttpRequest(),
@@ -59,6 +61,7 @@ function mycarousel(){
   
   
   //create paragraph and  append to carousel 
+
   let paragraph=document.createElement("p"),
       x="It's Not Over Untill I Win",
       index=0;
@@ -76,10 +79,8 @@ function mycarousel(){
     let stop=setInterval(print,150);
   },5700);
   
-
-
-
 //function to get data from json file ana put in mycard section
+
 function mycard(){
   let request = new XMLHttpRequest(),
      imgsrc= document.querySelectorAll('.mycard img'),
@@ -102,9 +103,8 @@ function mycard(){
 
 mycard();
 
-
-
 //function to show more works & show less works
+
 let moreworks=document.querySelector('.mycard button'),
     allgrid=document.querySelectorAll('.mycard .col-md-3');
 moreworks.onclick=function(){
@@ -126,6 +126,7 @@ moreworks.onclick=function(){
 
 
 //function to toggle myinfo
+
 let sectionmyinfo=document.getElementById("myinfo"),
     panelbody=sectionmyinfo.childNodes[1].childNodes[1].childNodes[3],
     span=sectionmyinfo.childNodes[1].childNodes[1].childNodes[1].childNodes[1];
@@ -145,6 +146,7 @@ span.onclick=function(){
 }
 
 //function to get data from json and put it in section myinfo
+
 function information(){
   let myinfo=new XMLHttpRequest(),
       alllist=document.querySelectorAll(".myinfo ul li"),
@@ -171,8 +173,8 @@ function information(){
 information();
 
 
-
 //function to animate our-progress section
+
 $(function(){
   "use strict";
     $(window).on("scroll",function(){
@@ -189,6 +191,7 @@ $(function(){
 
 
 //function to get data from json file ana put it in our-progress section
+
 function get(){
   let myrequest=new XMLHttpRequest(),
       allprogress=document.querySelectorAll(".our-progress .progress-bar"),
@@ -232,6 +235,7 @@ window.onscroll=function(){
 
 
 //function to get data from data.json and put it in feature section
+
 function featuresection(){
   let featurerequest=new XMLHttpRequest(),
       allicon=document.querySelectorAll(".feature .feat i"),
@@ -265,19 +269,21 @@ featuresection();
 
 
 //function to show popup
+
 document.querySelector(".feature button").onclick=function(){
-  console.log(document.querySelector(".feature").offsetTop);
   document.querySelector(".feature .overlay .properties").style.top=`${document.querySelector(".feature").offsetTop}px`;
   document.querySelector(".feature .overlay").style.display="block";
 }
 
 //function to close popup
+
 document.querySelector(".feature .overlay .cancel").onclick=function(){
   document.querySelector(".feature .overlay").style.display="none";
 }
 
 
 //function to animate form
+
 $(function(){
   "use strict";
   $(window).on("scroll",function(){

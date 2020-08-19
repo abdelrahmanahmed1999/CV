@@ -3,6 +3,7 @@ body{
 }
 
 /*start general*/
+
 *{
     box-sizing:border-box;
 }
@@ -30,7 +31,7 @@ body{
     height:100%;
     background:rgba(0,0,0,1);
     z-index:99999;
-
+    
     p{
         color:#FFF;
         font-size:30px;
@@ -39,6 +40,7 @@ body{
     }
 
     @media(max-width:767px){
+
         p{
             font-size:20px;
         }
@@ -89,6 +91,8 @@ body{
 
 .myheader{
     margin-bottom:50px;
+    margin-top:50px;
+
 
     .item{
 
@@ -118,10 +122,9 @@ body{
     @media(max-width:767px) {
 
         li{   
-            font-size:13px !important;
-
+            font-size:9px !important;        
             span{
-                width:16% !important;
+                width:23% !important;
             }
         }
 
@@ -224,6 +227,28 @@ body{
         h2{
             font-size:30px;
         }
+
+        .item{
+            height:150px;
+        }
+        
+        .card{
+            height: 80% !important;
+        }
+        
+        img{
+            height:100px;
+        }
+
+        .back{
+            top:5% !important;
+            font-size:9px;
+        }
+
+        a{
+            width: 90%;
+            font-size: 7px;
+        }
     }
 
     h2{
@@ -301,13 +326,23 @@ body{
             font-size:30px;
         }
 
-        .propertise{
-            width:90%;
+        .col-xs-4{
+            padding-right:5px;
+            padding-left:0;
+
+            &:nth-child(7),
+            &:nth-child(8){
+                display:none;
+            }
+        }
+
+        .properties{
+            width:90% !important;
         }
 
         .overlfeat{
-            width: 110px;
-            height: 210px;
+            width:100%;
+            height:165px;
         }
 
         .icon{
@@ -319,7 +354,7 @@ body{
         
         p{
             width: 100%;
-            font-size: 11px;
+            font-size: 8px;
         }
     }
 
@@ -489,6 +524,18 @@ body{
 .upperfooter{
     padding:20px 0;
     background:#333;
+ 
+    @media(max-width:767px){
+
+        .col-xs-2{
+            padding-right:0;
+            padding-left:0;
+        }
+
+        img{
+            width:100%;
+        }
+    }
 
     .image{
         display:none;
@@ -510,21 +557,58 @@ body{
         &{
             padding:20px 0;
         }
-            
-            p{
-                width:100% !important;
-            }
 
-        ul{
+        .col-xs-6{
+            padding-left:15px;
+        }
+
+        img{
+            width:50px;
+        }
+
+        .media-body{
+            width:80px;
+        }
+
+        h4{
+            width:80px;
+            font-size:10px !important;
+        }
+
+        p{
             width:100% !important;
+            font-size:10px;
+        }
+
+        .first{
 
             li{
-                width: 23%;
+                width: 30px !important;
+                font-size: 6px;
+                margin-right:0 !important;
+                margin-left:0 !important;
+                padding-right:30px !important;
+
+                &:nth-child(2){
+                    border-right:0;
+                }
+            }
+        }
+
+        .second{
+
+            li{
+                margin-right:0 !important;
+
+            }
+        }
+
+        .third{
+
+            li{
+                display:block;
+                margin-bottom: 10px;
                 font-size: 10px;
-                margin-left: 0 !important;
-                margin-right:5px !important;
-                margin-bottom:10px;
-                padding-right: 0 !important;
             }
         }
     }
